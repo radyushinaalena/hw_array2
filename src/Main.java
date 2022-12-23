@@ -51,13 +51,12 @@ public class Main {
         int[] arr = generateRandomArray();
         double average = 0;
         double sum = 0;
-        int daysInAMonth = 30;
         System.out.println("Ежедневные траты: ");
         for (int i : arr) {
             System.out.println(i);
             sum += i;
-            average = sum / daysInAMonth;
         }
+        average = sum / arr.length;
         System.out.printf("Средняя сумма трат за месяц составила %.2f рублей\n", average);
     }
 
